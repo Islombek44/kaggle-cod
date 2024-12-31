@@ -1,0 +1,21 @@
+import tensorflow as tf
+from tensorflow.keras.layers import Layer
+import swish
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import plotly.express as px
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_percentage_error
+import tensorflow as tf
+from keras import Model
+from keras.layers import Input, Dense, Dropout
+from keras.layers import LSTM
+
+	Date	Adj Close	Close	High	Low	Open	Volume
+0	1980-03-17	2.296798	3.291227	3.344743	3.291227	0.000000	41109
+1	1980-03-18	2.306134	3.304606	3.358122	3.304606	0.000000	9343
+2	1980-03-19	2.306134	3.304606	3.304606	3.304606	3.304606	0
+3	1980-03-20	2.306134	3.304606	3.358122	3.304606	0.000000	10277
+4	1980-03-21	2.362154	3.384880	3.438396	3.384880	0.000000	8409
